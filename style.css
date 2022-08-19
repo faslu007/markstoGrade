@@ -1,0 +1,19 @@
+.gradeA1{
+    color: green;
+}
+
+.gradeA{
+    color: rgba(29, 135, 59, 0.855);
+}
+
+.gradeB1{
+    color: rgb(23, 125, 203);
+}  
+
+.gradeB{
+    color: rgb(42, 69, 90);
+}  
+
+.gradeC1{
+    color: rgb(17, 42, 72);
+} 
