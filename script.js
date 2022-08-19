@@ -68,15 +68,35 @@ function displayGrades(){
         document.getElementById('scienceGrade').innerHTML = `your science grade is ${grades[2]}`;
         document.getElementById('historyGrade').innerHTML = `your history grade is ${grades[3]}`;
         document.getElementById('disclaimer').innerHTML = `refresh the page to check for another set of marks`;
-}
 
+        //Calling function to change the font-color based on the grade
+        manipulateElementColor(grades[0], 'mathGrade');
+        manipulateElementColor(grades[1], 'englishGrade');
+        manipulateElementColor(grades[2], 'scienceGrade');
+        manipulateElementColor(grades[3], 'historyGrade');
+        
+    }
 
-
-
-
-
-
-
-
-
-
+// function to change the font color based on grade
+function manipulateElementColor (grade, elementID) {
+        if( grade === 'A+')
+        {
+            document.getElementById(elementID).classList.add('gradeA1');
+        }
+        else if( grade === 'A')
+        {
+            document.getElementById(elementID).classList.add('gradeA');
+        }
+        else if( grade === 'B+')
+        {
+            document.getElementById(elementID).classList.add('gradeB1')
+        }
+        else if( grade === 'B')
+        {
+            document.getElementById(elementID).classList.add('gradeB')
+        }
+        else if( grade === 'C+')
+        {
+            document.getElementById(elementID).classList.add('gradeC1')
+        }
+    }
